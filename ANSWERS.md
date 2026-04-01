@@ -27,7 +27,13 @@ In this assignment, threads were used instead of processes because the simulatio
 
 **Your Answer:**
 
-[Write your answer here. Describe the specific behavior - where does the process go? When does it run again? Give an example from your actual program output showing a process that was re-queued.]
+[In Round-Robin scheduling, if a process does not finish within its time quantum, it is paused and moved to the end of the ready queue. This ensures that all processes get a fair chance to use the CPU.
+
+When a process uses up its allocated time quantum and still has remaining time, a context switch occurs, and the process is placed at the back of the queue. It will wait until other processes get their turn before it executes again.
+
+For example, in my program output, when a process such as P1 runs and does not finish within its time quantum, it yields the CPU and is re-added to the ready queue. After that, other processes like P2 and P3 are executed before P1 gets another turn.
+
+This behavior is important for fairness because it prevents any single process from monopolizing the CPU. It ensures that all processes make progress and that the system remains responsive when multiple tasks are running.]
 
 Example from my output:
 ```
