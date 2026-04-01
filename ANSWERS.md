@@ -93,10 +93,11 @@ Example from my output:
 ## Summary
 
 **Key concepts I understood through these questions:**
-1. 
-2. 
-3. 
+1. The fundamental differences between a Thread and a Process, specifically regarding memory sharing and creation overhead. 
+2. How the Thread Lifecycle (New, Runnable, Running, Waiting, Terminated) is managed using specific Java methods like Thread.start() and Thread.sleep(). 
+3. The critical role of Context Switching and a Ready Queue in maintaining fairness and system responsiveness.  
+Concepts I need to study more
 
 **Concepts I need to study more:**
-1. 
-2. 
+1. Advanced synchronization techniques to prevent data races when multiple threads access shared resources.
+2. The impact of different timeQuantum lengths on overall system throughput and latency.
