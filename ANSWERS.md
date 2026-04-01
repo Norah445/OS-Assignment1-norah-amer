@@ -72,21 +72,21 @@ Example from my output:
 
 **Your Answer:**
 
-### Example 1: [Name of application/scenario]
+### Example 1: [ Multi-User Web Server]
 
 **Description**: 
-[Describe the real-world scenario or application]
+[A web server (like Apache or Nginx) must handle hundreds or thousands of simultaneous incoming HTTP requests from different users at the same time.  ]
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+[ Round-Robin provides fairness by ensuring that no single long request (such as a large file download) completely blocks the server from responding to smaller, quicker requests (like fetching a simple webpage). By giving each request "thread" a small time quantum of CPU time, the server remains highly responsive to all users simultaneously. ]
 
-### Example 2: [Name of application/scenario]
+### Example 2: [Modern Game Engine]
 
 **Description**: 
-[Describe the real-world scenario or application]
+[ In a video game engine, the system must concurrently manage various independent tasks such as physics calculations, artificial intelligence (AI) logic, and audio processing.]
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+[ Game engines require predictability and low latency to maintain a steady frame rate. Round-Robin scheduling ensures that the AI thread doesn't "starve" the Audio thread of CPU time, preventing sound glitches or stuttering during complex gameplay. It allows the engine to cycle through all critical tasks within a single frame]
 
 ---
 
