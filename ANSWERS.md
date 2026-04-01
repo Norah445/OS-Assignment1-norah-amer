@@ -11,7 +11,13 @@ Answer all 4 questions with detailed explanations. Each answer should be **3-5 s
 
 **Your Answer:**
 
-[Write your answer here. Consider: What is a process? What is a thread? How do they differ in terms of memory, resources, creation overhead? Why are threads more suitable for this simulation?]
+[process is an independent program in execution that has its own memory space and system resources. Each process runs separately and does not share memory with other processes, which makes it more secure but also more expensive in terms of creation and communication.
+
+A thread is a smaller unit of execution within a process. Multiple threads can exist within a single process and share the same memory and resources, which makes them more lightweight and faster compared to processes.
+
+One key difference is that processes have separate memory spaces, while threads share the same memory, allowing faster communication. Another difference is that creating and switching between processes requires more overhead, whereas threads are faster to create and manage.
+
+In this assignment, threads were used instead of processes because the simulation requires frequent context switching between tasks. Threads make this more efficient and faster. Additionally, threads allow shared access to data structures like the ready queue without the need for complex communication mechanisms.]
 
 ---
 
